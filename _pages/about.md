@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: University of Waterloo. z33ge[at]uwaterloo[dot]ca
+subtitle: University of Waterloo. z33ge [at] uwaterloo [dot] ca
 
 profile:
   align: right
@@ -16,4 +16,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-4B Computer Science student at the University of Waterloo. I'm interested in programming lanugages.
+4B Computer Science student at the University of Waterloo. 
+
+I'm interested in programming lanugages.
