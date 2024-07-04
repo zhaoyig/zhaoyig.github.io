@@ -18,4 +18,4 @@ social: true # includes social icons at the bottom of the page
 
 4B Computer Science student at the University of Waterloo. 
 
-I'm interested in programming lanugages. lalal
+I'm interested in programming lanugages. 
