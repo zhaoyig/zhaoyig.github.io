@@ -1,0 +1,358 @@
+@charset "utf-8";
+
+/* 各要素 */
+
+/* リンク */
+
+a:link {
+	text-decoration:underline;
+	color:#00c;
+	background-color:transparent;
+}
+
+a:visited {
+	text-decoration:underline;
+	color:#009;
+	background-color:transparent;
+}
+
+a:hover {
+	text-decoration:underline;
+	color:#00c;
+	background-color:#cff;
+}
+
+a:active {
+	text-decoration:underline;
+	color:#f33;
+	background-color:transparent;
+}
+
+h1 a:link, h1 a:visited, h1 a:hover, h1 a:active,
+h2 a:link, h2 a:visited, h2 a:hover, h2 a:active,
+h3 a:link, h3 a:visited, h3 a:hover, h3 a:active,
+h4 a:link, h4 a:visited, h4 a:hover, h4 a:active,
+h5 a:link, h5 a:visited, h5 a:hover, h5 a:active,
+h6 a:link, h6 a:visited, h6 a:hover, h6 a:active {
+	text-decoration:none;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+	color:#00c;
+}
+
+/* 構造 */
+
+body {
+	margin:0 auto;
+	padding:12px 0;
+	color:#000;
+	background-color:#fff;
+	line-height:1.22;
+	max-width:48em;
+}
+
+address {
+	font-size: 16px;
+	border-top:solid 1px #333;
+	margin-top:100px;
+	margin-left:-48px;
+	margin-right:-48px;
+	font-style:normal;
+	text-align:right;
+	/* margin:0 -36px 1em 0; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	/*font-family:Verdana, Arial, sans-serif;*/
+	font-family:serif;
+	font-weight:normal;
+	border-bottom:solid 1px #333;
+	margin:0 -36px 1em 0;
+}
+
+h1 {
+	margin-left:-48px;
+	margin-right:-48px;
+	text-align: left;
+	font-size:114%;
+}
+
+h2 {
+	margin-left:0px;
+	font-size:120%;
+}
+
+h3 {
+	margin-left:12px;
+	font-size:120%;
+}
+
+h4 {
+	margin-left:24px;
+	font-size:100%;
+}
+
+h5 {
+	margin-left:36px;
+	font-size:100%;
+}
+
+h6 {
+	margin-left:48px;
+	font-size:100%;
+}
+
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+	font-weight:normal;
+	margin-right:4px;
+}
+
+h3, h4, h5, h6 {
+	background-position:0% 50%;
+	background-repeat:no-repeat;
+}
+
+h3 {
+	background-image:url(h3_.png);
+	padding-left:13px;
+}
+
+h4 {
+	background-image:url(h4_.png);
+	padding-left:16px;
+}
+
+h5 {
+	background-image:url(h5_.png);
+	padding-left:16px;
+}
+
+h6 {
+	background-image:url(h6_.png);
+	padding-left:14px;
+}
+
+/* ▶◆★✱ */
+
+/* リスト */
+
+dl {
+	margin:1.6em 0;
+}
+
+dl dl {
+	margin:0;
+}
+
+dt {
+	/*font-family:Verdana, Arial, sans-serif;*/
+	font-weight:normal;
+	border-bottom:dotted 1px #333;
+	margin-right:50%;
+	line-height:1.6;
+}
+
+dd {
+	margin:0 0 0 24px;
+	line-height:1.6;
+}
+
+ul {
+	margin:0;
+	padding:0 0 0 20px;
+	list-style-image:url(uzu.png);
+	list-style-type:disc;
+}
+
+ol {
+	margin:0;
+	padding:0 0 0 24px;
+	list-style-image:none;
+	list-style-type:decimal;
+}
+
+ol ul, ul ul {
+	list-style-image:url(uzu-s.png);
+	list-style-type:circle;
+}
+
+ol ol ul, ol ul ul,
+ul ol ul, ul ul ul {
+	list-style-image:none;
+	list-style-type:square;
+}
+
+li {
+	line-height:1.6;
+}
+
+/* 表 */
+
+table {
+	margin:1.6em auto;
+	width:90%;
+	_width:auto;
+}
+
+th, td {
+	padding:0 4px;
+	line-height:1.6;
+}
+
+th {
+	border:solid 1px #333;
+	font-weight:bold;
+	font-family:Verdana, Arial, sans-serif;
+	text-align:center;
+}
+
+td {
+	border-bottom:dotted 1px #333;
+}
+
+/* テキスト */
+
+abbr,
+acronym,
+span.abbreviation {
+	border-style:none none dotted;
+	border-width:1px;
+	margin:0 0.2em;
+}
+
+cite, dfn, em {
+	font-family:Verdana, Arial, sans-serif;
+	font-style:italic;
+	margin:0 0.6em 0 0.2em;
+}
+
+code, samp {
+	font-family: monospace;
+	margin:0 0.2em;
+}
+
+pre samp,
+pre code {
+	margin:0;
+}
+
+kbd {
+	font-family: monospace;
+	border:solid 1px;
+	margin:0 0.2em;
+}
+
+p {
+	margin:1.6em 0;
+	line-height:1.6;
+}
+
+pre {
+	margin:1.6em 0;
+	font-family:monospace;
+	border:dotted 1px #333;
+	padding:4px;
+	white-space:-moz-pre-wrap; /* Mozilla, supported since 1999 */
+	white-space:-pre-wrap;     /* Opera 4 - 6 */
+	white-space:-o-pre-wrap;   /* Opera 7 */
+	white-space:pre-wrap;      /* CSS3 - Text module */
+	word-wrap:break-word;      /* IE 5.5+ */
+}
+
+dd p, dd pre,
+li p, li pre {
+	margin:0;
+}
+
+rt {
+	_font-size:64%;
+}
+
+strong {
+	font-family:Verdana, Arial, sans-serif;
+	font-style:normal;
+	font-weight:bold;
+	padding-bottom:1px;
+	border-bottom:solid 1px #000;
+}
+
+strong strong {
+	font-size:120%;
+	border-bottom:solid 0px;
+}
+
+var {
+	font-family: monospace;
+	font-style:italic;
+	font-size:90%;
+	margin:0 0.6em 0 0.2em;
+	color:#666;
+}
+
+pre var {
+	margin:0;
+}
+
+/* 引用 */
+
+blockquote {
+	background-image:url("quote.png");
+	background-position:4px 4px;
+	background-repeat:no-repeat;
+
+	margin:1.6em 0;
+	padding-left:60px;
+	border-left:dotted 1px #333;
+	min-height:50px;
+	_border-top:solid 1px #fff;
+	_border-bottom:solid 1px #fff;
+}
+
+blockquote blockquote {
+	min-height:0px;
+	background-image:none;
+	padding-left:24px;
+	_border-top:none;
+	_border-bottom:none;
+}
+
+q {
+}
+
+q:before {
+	content:"";
+}
+
+q:after {
+	content:"";
+}
+
+/* 編集 */
+
+ins {
+	text-decoration:none;
+}
+
+del, del * {
+	text-decoration:line-through;
+	color:#999;
+}
+
+/* その他 */
+
+hr {
+	display:none;
+}
+
+img {
+	border-style:none;
+}
