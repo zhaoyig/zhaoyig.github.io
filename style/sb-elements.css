@@ -169,8 +169,7 @@ dd {
 ul {
 	margin:0;
 	padding:0 0 0 20px;
-	list-style-image:url(uzu.png);
-	list-style-type:disc;
+	list-style-type:none;
 }
 
 ol {
